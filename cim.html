@@ -22,6 +22,7 @@
                 #logos {display: flex; flex-direction: row;}
                 #logos img {margin: 20px;}
                 button:hover, #about img:hover{cursor: pointer; opacity: 80%;}
+                button:active {opacity: 80%; box-shadow: 0 5px #666;transform:  translateY(4px);}
                 /* Extra small devices */
                 @media only screen and (max-width: 600px) {#about {width: 80%;}}
 
@@ -38,7 +39,7 @@
             <p>Simply type in some text into the text box, click generate and hear the voice!</p>
             <form>
                 <h4>Input your Text:</h4>
-                <textarea id="input_text" placeholder="Āpōpō ka rere atu tātou."></textarea>
+                <textarea id="input_text" placeholder="Type text and generate speech!">Āpōpō ka rere atu tātou.</textarea>
                 <button onclick="sendForm()" type="button">Generate Voice</button>
             </form>
             <audio id="audio" autoplay="" controls=""></audio>
